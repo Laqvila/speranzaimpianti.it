@@ -445,3 +445,27 @@ p { margin: 0 0 1em; }
 .btn-small { min-height: 42px; padding: 8px 18px; font-size: .95rem; }
 .legal ul { padding-left: 22px; }
 .legal .box ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 4px; }
+
+/* ---------- versione di prova: dati da verificare ----------
+   Alla messa online togliere class="bozza" dal <body> (index.html e _strumenti/pagine_legali.py):
+   evidenziazioni e striscia spariscono da sole. */
+.bozza-strip { display: none; }
+.bozza .bozza-strip {
+  display: block; position: relative; z-index: 60; background: #ffe66b; color: #3b3000;
+  text-align: center; font-size: .85rem; font-weight: 600; padding: 6px 16px;
+}
+.bozza .da-verificare {
+  background: #ffe66b; color: #2b2400 !important; border-radius: 4px; padding: 1px 5px;
+  box-decoration-break: clone; -webkit-box-decoration-break: clone;
+}
+.bozza .da-verificare a { color: #2b2400 !important; }
+.bozza .verifica-box {
+  position: relative; outline: 2px dashed #d4a800; outline-offset: 6px;
+  background-color: rgba(255, 230, 107, .35); border-radius: 6px;
+}
+.bozza .verifica-box::before {
+  content: "da verificare"; position: absolute; top: -18px; right: 0;
+  background: #ffe66b; color: #3b3000; font-size: .7rem; font-weight: 700;
+  letter-spacing: .05em; text-transform: uppercase; padding: 1px 7px; border-radius: 4px;
+}
+.bozza table.verifica-box { display: block; }

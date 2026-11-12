@@ -6,7 +6,7 @@
   var CONSENT_KEY = "si-consenso-v1";
   var CONSENT_DAYS = 180; // il consenso si richiede di nuovo dopo 6 mesi (linee guida Garante 2021)
   var MAP_SRC = "https://www.google.com/maps?q=Piazza+Mariano+D%27Ayala+11,+67100+L%27Aquila&z=16&output=embed";
-  var MAIL_TO = "info@speranzaimpianti.it";
+  var MAIL_TO = "speranzaimpianti@gmail.com";
 
   /* ---------- stato del consenso ---------- */
   function readConsent() {
@@ -149,7 +149,7 @@
         "Ho letto l'informativa privacy e acconsento al trattamento dei dati per ricevere il preventivo.";
       var subject = "Richiesta preventivo: " + get("f-tipo");
       window.location.href = "mailto:" + MAIL_TO + "?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
-      msg.textContent = "Si è aperto il vostro programma di posta con la richiesta già compilata. Se non si apre, scriveteci a " + MAIL_TO + " o chiamate lo 0862 31 31 88.";
+      msg.textContent = "Si è aperto il vostro programma di posta con la richiesta già compilata. Se non si apre, scriveteci a " + MAIL_TO + " o chiamate il 335 842 5599.";
     });
   }
 })();
