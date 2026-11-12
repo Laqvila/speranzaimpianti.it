@@ -31,7 +31,6 @@
     var f = document.createElement("iframe");
     f.src = MAP_SRC;
     f.title = "Mappa: Speranza Impianti, Piazza Mariano D'Ayala 11, L'Aquila";
-    f.loading = "lazy";
     f.referrerPolicy = "no-referrer-when-downgrade";
     box.innerHTML = "";
     box.appendChild(f);
